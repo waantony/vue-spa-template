@@ -17,22 +17,26 @@ module.exports = {
   outputDir: 'dist',
   productionSourceMap: false,
   configureWebpack (config) {
+
+    // 从外部引入的库，比如在 index.html 中引入 cdn 地址
     config.externals = {
+      // key 表示 import x from 'key'
+      // value 表示外部引入的库暴露的全局变量名
       'fromPath': 'globalVarName',
-      'BMap': 'BMap',
-      'vue': 'Vue',
-      'vue-router': 'VueRouter',
-      'vuex': 'Vuex',
-      'axios': 'axios',
-      'vant': 'vant',
-      'echarts': 'echarts',
-      'videojs': 'videojs',
-      'lodash': '_',
-      'qq': 'qq',
-      'wx': 'wx',
-      'callapp-lib': 'CallApp',
-      'element-ui': 'ELEMENT',
-      'xlsx': 'XLSX',
+      // 'BMap': 'BMap',
+      // 'vue': 'Vue',
+      // 'vue-router': 'VueRouter',
+      // 'vuex': 'Vuex',
+      // 'axios': 'axios',
+      // 'vant': 'vant',
+      // 'echarts': 'echarts',
+      // 'videojs': 'videojs',
+      // 'lodash': '_',
+      // 'qq': 'qq',
+      // 'wx': 'wx',
+      // 'callapp-lib': 'CallApp',
+      // 'element-ui': 'ELEMENT',
+      // 'xlsx': 'XLSX',
     }
 
     // 生产环境配置
