@@ -1,2 +1,7 @@
 # vue-spa-template
-Vue Single Page Application Project Template, Based on vue-cli@4, vue@2
+
+Vue 单页应用模板（Vue Single Page Application Template）
+
+目的是模版与业务逻辑分开，不同项目替换 `src` 目录后能够保持正常运行。
+
+完善中...

@@ -1,0 +1,17 @@
+<template>
+  <div id="app">
+    <keep-alive :max="15">
+      <router-view v-if="$route.meta.keepAlive" />
+    </keep-alive>
+    <router-view v-if="!$route.meta.keepAlive" />
+  </div>
+</template>
+
+<style lang="scss">
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333;
+  min-height: 100vh;
+}
+</style>
